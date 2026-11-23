@@ -1,0 +1,1768 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西西gogo顶级艺术摄影 - 品牌官网_原创影像与视觉创作社区</title>
+<meta name="description" content="西西gogo顶级艺术摄影官方网站，专注人像、时尚与观念影像的原创视频内容平台，汇聚专业创作者，持续运营高品质视觉内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314181f'/%3E%3Ccircle cx='32' cy='30' r='14' fill='none' stroke='%23e8b96a' stroke-width='3'/%3E%3Ccircle cx='32' cy='30' r='5' fill='%23e8b96a'/%3E%3Crect x='18' y='48' width='28' height='4' rx='2' fill='%23e8b96a' opacity='.6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --xgg-ink:#14181f;
+  --xgg-ink-2:#1d232d;
+  --xgg-paper:#f6f4ef;
+  --xgg-paper-2:#efece4;
+  --xgg-line:#d9d4c9;
+  --xgg-gold:#b8862f;
+  --xgg-gold-soft:#e8b96a;
+  --xgg-red:#a63a2b;
+  --xgg-text:#252a31;
+  --xgg-muted:#6b7079;
+  --xgg-shadow:0 10px 30px rgba(20,24,31,.10);
+  --xgg-radius:14px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--xgg-paper);
+  color:var(--xgg-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;}
+p{margin:0 0 1em;}
+ul{margin:0;padding:0;list-style:none;}
+button{font-family:inherit;cursor:pointer;}
+
+.xgg-shell{width:min(1180px,92vw);margin:0 auto;}
+.xgg-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+/* ============ 吸顶公告 + 页头 ============ */
+.xgg-topwrap{
+  position:sticky;top:0;z-index:80;
+  background:rgba(246,244,239,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--xgg-line);
+}
+.xgg-notice{
+  background:linear-gradient(90deg,var(--xgg-ink) 0%,var(--xgg-ink-2) 100%);
+  color:#f2eee6;
+  font-size:13px;
+  letter-spacing:.02em;
+}
+.xgg-notice-inner{
+  display:flex;align-items:center;gap:12px;
+  min-height:38px;padding:6px 0;flex-wrap:wrap;
+}
+.xgg-notice-tag{
+  flex:0 0 auto;
+  background:var(--xgg-gold);
+  color:var(--xgg-ink);
+  font-weight:700;font-size:12px;
+  padding:2px 9px;border-radius:999px;
+  letter-spacing:.08em;
+}
+.xgg-notice-body{flex:1 1 auto;min-width:0;display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.xgg-notice-item{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.xgg-notice-item b{color:var(--xgg-gold-soft);font-weight:600;}
+.xgg-notice-link{color:var(--xgg-gold-soft);border-bottom:1px dashed rgba(232,185,106,.55);font-size:12px;}
+
+.xgg-header{background:transparent;}
+.xgg-head-inner{
+  display:flex;align-items:center;gap:22px;
+  padding:14px 0;
+}
+.xgg-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.xgg-logo-mark{
+  width:40px;height:40px;border-radius:11px;
+  background:var(--xgg-ink);
+  display:grid;place-items:center;
+  border:1px solid #2f3742;
+}
+.xgg-logo-mark svg{width:24px;height:24px;}
+.xgg-logo-txt{display:flex;flex-direction:column;line-height:1.15;}
+.xgg-logo-name{font-weight:800;font-size:17px;letter-spacing:.02em;color:var(--xgg-ink);}
+.xgg-logo-sub{font-size:11px;color:var(--xgg-muted);letter-spacing:.22em;}
+
+.xgg-nav{margin-left:auto;display:flex;gap:4px;align-items:center;}
+.xgg-nav a{
+  padding:8px 12px;border-radius:8px;font-size:14.5px;color:#3b414a;
+  transition:background .2s,color .2s;
+}
+.xgg-nav a:hover{background:var(--xgg-paper-2);color:var(--xgg-ink);}
+.xgg-nav a.xgg-nav-hot{color:var(--xgg-red);font-weight:600;}
+
+.xgg-head-tools{display:flex;align-items:center;gap:10px;}
+.xgg-search{
+  display:flex;align-items:center;
+  background:#fff;border:1px solid var(--xgg-line);
+  border-radius:999px;padding:4px 6px 4px 14px;
+  transition:box-shadow .2s,border-color .2s;
+}
+.xgg-search:focus-within{border-color:var(--xgg-gold);box-shadow:0 0 0 3px rgba(184,134,47,.14);}
+.xgg-search input{
+  border:0;outline:0;background:transparent;
+  width:140px;font-size:13.5px;color:var(--xgg-text);padding:5px 0;
+}
+.xgg-search button{
+  border:0;background:var(--xgg-ink);color:#fff;
+  border-radius:999px;padding:6px 12px;font-size:12.5px;
+  transition:background .2s;
+}
+.xgg-search button:hover{background:#2a313c;}
+.xgg-navtoggle{
+  display:none;border:1px solid var(--xgg-line);background:#fff;
+  width:42px;height:42px;border-radius:10px;
+  flex-direction:column;justify-content:center;align-items:center;gap:5px;
+}
+.xgg-navtoggle span{width:18px;height:2px;background:var(--xgg-ink);border-radius:2px;transition:transform .25s,opacity .2s;}
+.xgg-navtoggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.xgg-navtoggle[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.xgg-navtoggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+.xgg-search-feedback{
+  font-size:12.5px;color:var(--xgg-gold);min-height:0;
+  padding:0 0 0 2px;display:none;
+}
+.xgg-search-feedback.is-on{display:block;padding-bottom:10px;}
+
+/* 锚点滚动补偿 */
+.xgg-anchor{scroll-margin-top:120px;}
+section{scroll-margin-top:120px;}
+
+/* ============ 首屏：左文右侧大图 + 数据条 ============ */
+.xgg-hero{padding:34px 0 10px;}
+.xgg-hero-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);
+  gap:44px;align-items:center;
+}
+.xgg-hero-eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:12px;letter-spacing:.2em;color:var(--xgg-gold);
+  text-transform:uppercase;font-weight:700;
+  background:rgba(184,134,47,.09);
+  border:1px solid rgba(184,134,47,.28);
+  padding:5px 12px;border-radius:999px;margin-bottom:20px;
+}
+.xgg-hero-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--xgg-gold);}
+.xgg-hero h1{
+  font-size:clamp(30px,4.4vw,54px);
+  letter-spacing:-.01em;color:var(--xgg-ink);
+  font-weight:800;
+}
+.xgg-hero h1 em{
+  font-style:normal;color:var(--xgg-gold);
+  position:relative;white-space:nowrap;
+}
+.xgg-hero-lead{
+  margin-top:20px;font-size:16.5px;color:#454b54;line-height:1.85;
+  max-width:56ch;
+}
+.xgg-hero-intro{
+  margin-top:14px;font-size:14.5px;color:var(--xgg-muted);line-height:1.9;
+  max-width:60ch;
+}
+.xgg-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+.xgg-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  border-radius:999px;padding:12px 24px;font-size:14.5px;font-weight:600;
+  border:1px solid transparent;transition:transform .18s,box-shadow .2s,background .2s,color .2s;
+}
+.xgg-btn:hover{transform:translateY(-2px);}
+.xgg-btn-primary{background:var(--xgg-ink);color:#fff;box-shadow:0 8px 20px rgba(20,24,31,.18);}
+.xgg-btn-primary:hover{background:#252c37;}
+.xgg-btn-ghost{background:#fff;color:var(--xgg-ink);border-color:var(--xgg-line);}
+.xgg-btn-ghost:hover{border-color:var(--xgg-gold);color:var(--xgg-gold);}
+.xgg-btn-gold{background:var(--xgg-gold);color:#fff;}
+.xgg-btn-gold:hover{background:#a07424;}
+
+.xgg-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;margin-top:30px;padding-top:22px;
+  border-top:1px solid var(--xgg-line);
+}
+.xgg-stat-num{font-size:26px;font-weight:800;color:var(--xgg-ink);letter-spacing:-.02em;}
+.xgg-stat-num span{font-size:14px;font-weight:600;color:var(--xgg-gold);margin-left:2px;}
+.xgg-stat-label{font-size:12.5px;color:var(--xgg-muted);margin-top:2px;}
+
+.xgg-hero-visual{position:relative;}
+.xgg-hero-frame{
+  position:relative;border-radius:20px;overflow:hidden;
+  box-shadow:var(--xgg-shadow);
+  border:1px solid #d9d3c5;
+  aspect-ratio:5/4.6;
+  background:#1b2129;
+}
+.xgg-hero-frame svg{width:100%;height:100%;display:block;}
+.xgg-hero-badge{
+  position:absolute;left:18px;bottom:18px;
+  background:rgba(20,24,31,.82);
+  backdrop-filter:blur(6px);
+  color:#f3efe6;border:1px solid rgba(232,185,106,.4);
+  border-radius:12px;padding:10px 14px;font-size:12.5px;
+  display:flex;align-items:center;gap:10px;max-width:88%;
+}
+.xgg-hero-badge b{color:var(--xgg-gold-soft);font-weight:700;}
+.xgg-live-dot{width:8px;height:8px;border-radius:50%;background:#e0573f;box-shadow:0 0 0 4px rgba(224,87,63,.22);flex:0 0 auto;}
+
+/* ============ 通用 section 头 ============ */
+.xgg-section{padding:56px 0 8px;}
+.xgg-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px;}
+.xgg-sec-kicker{font-size:12px;letter-spacing:.24em;color:var(--xgg-gold);font-weight:700;text-transform:uppercase;margin-bottom:8px;}
+.xgg-sec-head h2{font-size:clamp(22px,2.8vw,31px);color:var(--xgg-ink);letter-spacing:-.01em;}
+.xgg-sec-desc{font-size:14px;color:var(--xgg-muted);max-width:52ch;margin-top:6px;}
+.xgg-sec-more{font-size:13.5px;color:var(--xgg-gold);border-bottom:1px solid rgba(184,134,47,.35);padding-bottom:2px;white-space:nowrap;}
+
+/* ============ 焦点视频区 ============ */
+.xgg-focus-grid{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:30px;
+}
+.xgg-focus-main{
+  background:#fff;border:1px solid var(--xgg-line);border-radius:var(--xgg-radius);
+  overflow:hidden;box-shadow:0 6px 18px rgba(20,24,31,.05);
+  display:flex;flex-direction:column;
+}
+.xgg-focus-thumb{aspect-ratio:16/9;background:#20262f;position:relative;}
+.xgg-focus-thumb svg{width:100%;height:100%;display:block;}
+.xgg-focus-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1;}
+.xgg-tagrow{display:flex;flex-wrap:wrap;gap:7px;}
+.xgg-tag{
+  font-size:11.5px;color:var(--xgg-gold);
+  background:rgba(184,134,47,.10);border:1px solid rgba(184,134,47,.28);
+  border-radius:999px;padding:2px 10px;letter-spacing:.04em;
+}
+.xgg-tag.is-ink{color:#3b414a;background:var(--xgg-paper-2);border-color:var(--xgg-line);}
+.xgg-focus-title{font-size:20px;color:var(--xgg-ink);}
+.xgg-focus-title:hover{color:var(--xgg-gold);}
+.xgg-focus-text{font-size:14px;color:#5b616b;}
+.xgg-meta{
+  display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+  font-size:12.5px;color:var(--xgg-muted);margin-top:2px;
+}
+.xgg-meta b{color:#3b414a;font-weight:600;}
+.xgg-card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px;}
+.xgg-act{
+  display:inline-flex;align-items:center;gap:6px;
+  border:1px solid var(--xgg-line);background:#fff;color:#4a505a;
+  border-radius:999px;padding:6px 13px;font-size:12.5px;
+  transition:all .18s;
+}
+.xgg-act:hover{border-color:var(--xgg-gold);color:var(--xgg-gold);}
+.xgg-act.is-liked{border-color:var(--xgg-red);color:var(--xgg-red);background:rgba(166,58,43,.06);}
+.xgg-act.is-saved{border-color:var(--xgg-gold);color:var(--xgg-gold);background:rgba(184,134,47,.09);}
+.xgg-act svg{width:14px;height:14px;}
+
+.xgg-focus-side{display:flex;flex-direction:column;gap:14px;}
+.xgg-textcard{
+  background:#fff;border:1px solid var(--xgg-line);border-radius:12px;
+  padding:15px 17px;transition:border-color .2s,transform .2s,box-shadow .2s;
+}
+.xgg-textcard:hover{border-color:var(--xgg-gold);transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,24,31,.07);}
+.xgg-textcard h3{font-size:15.5px;color:var(--xgg-ink);margin-bottom:5px;}
+.xgg-textcard h3:hover{color:var(--xgg-gold);}
+.xgg-textcard p{font-size:13px;color:var(--xgg-muted);margin:0 0 8px;}
+.xgg-textcard .xgg-meta{font-size:12px;gap:10px;margin-bottom:0;}
+
+/* ============ 视频列表（文字索引流） ============ */
+.xgg-list-wrap{margin-top:34px;}
+.xgg-list-title{font-size:16px;color:var(--xgg-ink);display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.xgg-list-title::after{content:"";flex:1;height:1px;background:var(--xgg-line);}
+.xgg-video-list{display:flex;flex-direction:column;gap:2px;}
+.xgg-vrow{
+  display:grid;grid-template-columns:44px minmax(0,1fr) auto;
+  gap:16px;align-items:center;
+  padding:15px 6px;border-bottom:1px dashed var(--xgg-line);
+  transition:background .2s,padding-left .2s;
+}
+.xgg-vrow:hover{background:rgba(184,134,47,.05);padding-left:12px;}
+.xgg-vrank{
+  font-size:18px;font-weight:800;color:var(--xgg-gold);
+  font-variant-numeric:tabular-nums;
+}
+.xgg-vbody h3{font-size:15px;color:var(--xgg-ink);margin-bottom:3px;}
+.xgg-vbody h3:hover{color:var(--xgg-gold);}
+.xgg-vbody p{font-size:12.8px;color:var(--xgg-muted);margin:0 0 5px;}
+.xgg-vbody .xgg-tagrow{margin-top:4px;}
+.xgg-vside{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
+.xgg-vdata{font-size:12px;color:var(--xgg-muted);text-align:right;white-space:nowrap;}
+.xgg-vdata b{color:#3b414a;}
+
+/* ============ 关键词解析 ============ */
+.xgg-essay{background:#fff;border:1px solid var(--xgg-line);border-radius:var(--xgg-radius);padding:clamp(22px,3.4vw,42px);}
+.xgg-essay h2{font-size:clamp(22px,2.6vw,29px);color:var(--xgg-ink);margin-bottom:8px;}
+.xgg-essay .xgg-sec-kicker{margin-bottom:10px;}
+.xgg-essay p{font-size:14.8px;color:#42474f;line-height:1.95;}
+.xgg-essay h3{font-size:17px;color:var(--xgg-ink);margin:26px 0 8px;padding-left:12px;border-left:3px solid var(--xgg-gold);}
+.xgg-essay-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;}
+.xgg-essay-quote{
+  background:var(--xgg-paper-2);border-radius:12px;padding:18px 20px;
+  font-size:13.8px;color:#4b515a;border-left:3px solid var(--xgg-gold);
+}
+.xgg-essay-quote b{color:var(--xgg-ink);}
+
+/* ============ 专题企划 ============ */
+.xgg-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.xgg-topic{
+  background:#fff;border:1px solid var(--xgg-line);border-radius:var(--xgg-radius);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .22s,box-shadow .22s,border-color .2s;
+}
+.xgg-topic:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(20,24,31,.1);border-color:rgba(184,134,47,.5);}
+.xgg-topic-img{aspect-ratio:16/9;background:#1f252e;}
+.xgg-topic-img svg{width:100%;height:100%;display:block;}
+.xgg-topic-body{padding:17px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.xgg-topic-body h3{font-size:16.5px;color:var(--xgg-ink);}
+.xgg-topic-body > p{font-size:13px;color:var(--xgg-muted);margin:0;}
+.xgg-status{
+  display:inline-flex;align-items:center;gap:6px;font-size:11.5px;
+  color:#2f7a52;background:rgba(47,122,82,.09);
+  border:1px solid rgba(47,122,82,.24);
+  border-radius:999px;padding:2px 10px;align-self:flex-start;
+}
+.xgg-status.is-warm{color:var(--xgg-red);background:rgba(166,58,43,.07);border-color:rgba(166,58,43,.24);}
+.xgg-status::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor;}
+.xgg-topic-items{display:flex;flex-direction:column;gap:7px;margin-top:4px;padding-top:12px;border-top:1px dashed var(--xgg-line);}
+.xgg-topic-items li{font-size:12.8px;color:#4c525b;display:flex;gap:8px;}
+.xgg-topic-items li::before{content:"·";color:var(--xgg-gold);font-weight:800;}
+
+/* ============ 创作者矩阵：双列简介 ============ */
+.xgg-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.xgg-author{
+  background:#fff;border:1px solid var(--xgg-line);border-radius:var(--xgg-radius);
+  padding:20px 21px;display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;
+  transition:border-color .2s,box-shadow .2s;
+}
+.xgg-author:hover{border-color:rgba(184,134,47,.55);box-shadow:0 10px 22px rgba(20,24,31,.07);}
+.xgg-avatar{
+  width:64px;height:64px;border-radius:16px;overflow:hidden;flex:0 0 auto;
+  border:1px solid var(--xgg-line);
+}
+.xgg-avatar svg{width:100%;height:100%;display:block;}
+.xgg-author-name{font-size:16px;color:var(--xgg-ink);display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.xgg-author-name span{font-size:11px;color:var(--xgg-gold);background:rgba(184,134,47,.11);border-radius:999px;padding:1px 8px;font-weight:600;}
+.xgg-author-field{font-size:12.3px;color:var(--xgg-gold);margin:3px 0 6px;letter-spacing:.03em;}
+.xgg-author-desc{font-size:12.9px;color:#565c65;margin:0 0 8px;line-height:1.8;}
+.xgg-author-data{display:flex;gap:14px;font-size:12px;color:var(--xgg-muted);}
+.xgg-author-data b{color:#3b414a;}
+.xgg-author-btn{
+  margin-top:10px;display:inline-flex;align-items:center;gap:6px;
+  font-size:12.5px;color:var(--xgg-ink);background:var(--xgg-paper-2);
+  border:1px solid var(--xgg-line);border-radius:999px;padding:5px 13px;
+  transition:all .18s;
+}
+.xgg-author-btn:hover{background:var(--xgg-ink);color:#fff;border-color:var(--xgg-ink);}
+
+/* ============ 评价区：引用摘录 ============ */
+.xgg-quote-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.xgg-quote{
+  background:#fff;border:1px solid var(--xgg-line);border-left:3px solid var(--xgg-gold);
+  border-radius:10px;padding:20px 20px 16px;display:flex;flex-direction:column;gap:10px;
+}
+.xgg-quote-mark{font-size:26px;line-height:1;color:rgba(184,134,47,.5);font-family:Georgia,serif;}
+.xgg-quote p{font-size:13.6px;color:#454b53;margin:0;line-height:1.85;}
+.xgg-quote-who{display:flex;align-items:center;gap:9px;margin-top:auto;padding-top:8px;border-top:1px dashed var(--xgg-line);}
+.xgg-quote-dot{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:#fff;flex:0 0 auto;}
+.xgg-quote-who b{font-size:12.8px;color:var(--xgg-ink);font-weight:600;}
+.xgg-quote-who em{font-style:normal;font-size:11.5px;color:var(--xgg-muted);display:block;}
+
+/* ============ 榜单 / 图文索引 ============ */
+.xgg-index-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:26px;}
+.xgg-board{background:var(--xgg-ink);border-radius:var(--xgg-radius);padding:24px 24px 18px;color:#e9e4da;}
+.xgg-board h3{color:#fff;font-size:17px;margin-bottom:4px;}
+.xgg-board-sub{font-size:12.5px;color:#9aa1ab;margin-bottom:16px;}
+.xgg-board-row{
+  display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;align-items:center;
+  padding:11px 0;border-bottom:1px solid rgba(255,255,255,.09);
+}
+.xgg-board-row:last-child{border-bottom:0;}
+.xgg-board-rank{font-weight:800;color:var(--xgg-gold-soft);font-variant-numeric:tabular-nums;font-size:15px;}
+.xgg-board-row h4{font-size:13.8px;font-weight:600;color:#f1ece2;}
+.xgg-board-row p{font-size:11.8px;color:#8f959f;margin:1px 0 0;}
+.xgg-board-score{font-size:12px;color:var(--xgg-gold-soft);font-weight:700;white-space:nowrap;}
+
+.xgg-news-list{display:flex;flex-direction:column;gap:12px;}
+.xgg-news{
+  background:#fff;border:1px solid var(--xgg-line);border-radius:12px;padding:14px 16px;
+  transition:border-color .2s,transform .2s;
+}
+.xgg-news:hover{border-color:rgba(184,134,47,.55);transform:translateX(3px);}
+.xgg-news-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;}
+.xgg-news-top h4{font-size:14.2px;color:var(--xgg-ink);}
+.xgg-news-date{font-size:11.5px;color:var(--xgg-muted);white-space:nowrap;}
+.xgg-news p{font-size:12.8px;color:#5b616b;margin:5px 0 0;}
+
+/* ============ 辅助区 / FAQ ============ */
+.xgg-aux-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:26px;align-items:start;}
+.xgg-faq details{
+  background:#fff;border:1px solid var(--xgg-line);border-radius:11px;
+  padding:14px 16px;margin-bottom:10px;transition:border-color .2s;
+}
+.xgg-faq details[open]{border-color:rgba(184,134,47,.5);}
+.xgg-faq summary{
+  cursor:pointer;font-size:14.2px;font-weight:600;color:var(--xgg-ink);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.xgg-faq summary::-webkit-details-marker{display:none;}
+.xgg-faq summary::after{content:"+";font-size:19px;color:var(--xgg-gold);font-weight:400;line-height:1;}
+.xgg-faq details[open] summary::after{content:"−";}
+.xgg-faq details p{font-size:13.2px;color:#565c65;margin:10px 0 0;line-height:1.85;}
+
+.xgg-partner-card{
+  background:linear-gradient(160deg,#fff 0%,var(--xgg-paper-2) 100%);
+  border:1px solid var(--xgg-line);border-radius:var(--xgg-radius);padding:22px;
+}
+.xgg-partner-card h3{font-size:16.5px;color:var(--xgg-ink);margin-bottom:6px;}
+.xgg-partner-card > p{font-size:13px;color:var(--xgg-muted);}
+.xgg-partners{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px;}
+.xgg-partner{
+  font-size:12.6px;color:#3f454e;background:#fff;border:1px solid var(--xgg-line);
+  border-radius:8px;padding:8px 13px;transition:all .18s;
+}
+.xgg-partner:hover{border-color:var(--xgg-gold);color:var(--xgg-gold);transform:translateY(-2px);}
+.xgg-submit{margin-top:18px;padding-top:16px;border-top:1px dashed var(--xgg-line);}
+.xgg-submit p{font-size:12.8px;color:var(--xgg-muted);margin-bottom:12px;}
+
+/* ============ 页脚 ============ */
+.xgg-footer{background:var(--xgg-ink);color:#b9bec7;margin-top:66px;padding:48px 0 26px;}
+.xgg-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:32px;}
+.xgg-footer h4{color:#fff;font-size:14px;margin-bottom:14px;letter-spacing:.04em;}
+.xgg-footer p{font-size:12.8px;line-height:1.9;margin:0 0 6px;}
+.xgg-footer a:hover{color:var(--xgg-gold-soft);}
+.xgg-footer-links{display:flex;flex-direction:column;gap:8px;font-size:12.8px;}
+.xgg-footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.xgg-footer-logo .xgg-logo-mark{background:#252c37;border-color:#39414d;}
+.xgg-footer-logo b{color:#fff;font-size:16px;font-weight:800;}
+.xgg-foot-note{font-size:12px;color:#8a919c;line-height:1.9;margin-top:10px;}
+.xgg-foot-bottom{
+  margin-top:34px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12px;color:#868d98;
+}
+
+/* 回到顶部 */
+.xgg-totop{
+  position:fixed;right:22px;bottom:26px;z-index:70;
+  width:46px;height:46px;border-radius:50%;
+  background:var(--xgg-ink);color:#fff;border:1px solid #333b46;
+  display:grid;place-items:center;
+  box-shadow:0 10px 24px rgba(20,24,31,.3);
+  opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:all .25s;
+}
+.xgg-totop.is-on{opacity:1;visibility:visible;transform:none;}
+.xgg-totop:hover{background:var(--xgg-gold);border-color:var(--xgg-gold);}
+
+/* Toast */
+.xgg-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,16px);
+  background:var(--xgg-ink);color:#f2eee6;font-size:13.2px;
+  padding:11px 20px;border-radius:999px;border:1px solid #39414d;
+  box-shadow:0 12px 30px rgba(0,0,0,.28);
+  opacity:0;visibility:hidden;transition:all .25s;z-index:120;max-width:86vw;text-align:center;
+}
+.xgg-toast.is-on{opacity:1;visibility:visible;transform:translate(-50%,0);}
+
+/* Modal */
+.xgg-modal{
+  position:fixed;inset:0;z-index:110;
+  background:rgba(15,18,23,.55);backdrop-filter:blur(3px);
+  display:grid;place-items:center;padding:20px;
+  opacity:0;visibility:hidden;transition:opacity .22s,visibility .22s;
+}
+.xgg-modal.is-on{opacity:1;visibility:visible;}
+.xgg-modal-box{
+  background:var(--xgg-paper);border-radius:16px;width:min(560px,100%);
+  max-height:86vh;overflow:auto;padding:26px;border:1px solid var(--xgg-line);
+  box-shadow:0 30px 70px rgba(0,0,0,.32);transform:translateY(12px);transition:transform .22s;
+}
+.xgg-modal.is-on .xgg-modal-box{transform:none;}
+.xgg-modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:14px;}
+.xgg-modal-head h3{font-size:18px;color:var(--xgg-ink);}
+.xgg-modal-close{
+  border:1px solid var(--xgg-line);background:#fff;width:32px;height:32px;border-radius:50%;
+  font-size:16px;line-height:1;color:#555;flex:0 0 auto;
+}
+.xgg-modal-close:hover{border-color:var(--xgg-red);color:var(--xgg-red);}
+.xgg-modal-box p{font-size:13.8px;color:#4a505a;}
+.xgg-field{display:block;margin-bottom:12px;font-size:12.8px;color:var(--xgg-muted);}
+.xgg-field input,.xgg-field textarea,.xgg-field select{
+  display:block;width:100%;margin-top:5px;
+  border:1px solid var(--xgg-line);border-radius:9px;padding:10px 12px;
+  font-family:inherit;font-size:13.5px;color:var(--xgg-text);background:#fff;outline:none;
+}
+.xgg-field input:focus,.xgg-field textarea:focus,.xgg-field select:focus{border-color:var(--xgg-gold);box-shadow:0 0 0 3px rgba(184,134,47,.14);}
+.xgg-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;}
+.xgg-share-row button{
+  border:1px solid var(--xgg-line);background:#fff;border-radius:10px;
+  padding:9px 16px;font-size:13px;color:#3f454e;transition:all .18s;
+}
+.xgg-share-row button:hover{border-color:var(--xgg-gold);color:var(--xgg-gold);}
+
+/* 响应式 */
+@media (max-width:1024px){
+  .xgg-hero-grid{grid-template-columns:1fr;gap:30px;}
+  .xgg-hero-visual{order:-1;}
+  .xgg-focus-grid{grid-template-columns:1fr;}
+  .xgg-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .xgg-quote-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .xgg-index-grid{grid-template-columns:1fr;}
+  .xgg-aux-grid{grid-template-columns:1fr;}
+  .xgg-essay-grid{grid-template-columns:1fr;gap:18px;}
+  .xgg-footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:820px){
+  .xgg-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:var(--xgg-paper);border-bottom:1px solid var(--xgg-line);
+    flex-direction:column;align-items:stretch;padding:10px 4vw 16px;
+    box-shadow:0 18px 30px rgba(20,24,31,.1);gap:2px;margin:0;
+  }
+  .xgg-nav.is-open{display:flex;}
+  .xgg-nav a{padding:11px 12px;font-size:15px;}
+  .xgg-navtoggle{display:flex;}
+  .xgg-head-inner{position:relative;}
+  .xgg-search input{width:96px;}
+  .xgg-author-grid{grid-template-columns:1fr;}
+  .xgg-notice-item{white-space:normal;}
+}
+@media (max-width:640px){
+  .xgg-hero{padding-top:22px;}
+  .xgg-hero-stats{grid-template-columns:1fr;gap:12px;}
+  .xgg-stat-num{font-size:22px;}
+  .xgg-topic-grid{grid-template-columns:1fr;}
+  .xgg-quote-grid{grid-template-columns:1fr;}
+  .xgg-footer-grid{grid-template-columns:1fr;}
+  .xgg-vrow{grid-template-columns:30px minmax(0,1fr);}
+  .xgg-vside{grid-column:1/-1;justify-content:flex-start;}
+  .xgg-search{display:none;}
+  .xgg-head-tools .xgg-btn-gold{display:none;}
+  .xgg-essay{padding:20px 18px;}
+  .xgg-author{grid-template-columns:52px minmax(0,1fr);gap:12px;padding:16px;}
+  .xgg-avatar{width:52px;height:52px;border-radius:13px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ============ 吸顶公告 + 页头 ============ -->
+<div class="xgg-topwrap">
+  <div class="xgg-notice">
+    <div class="xgg-shell xgg-notice-inner">
+      <span class="xgg-notice-tag">官方发布</span>
+      <div class="xgg-notice-body">
+        <span class="xgg-notice-item"><b>新专题上线</b>《光的标点：人像摄影的留白课》共 8 集，已更新至第 5 集</span>
+        <span class="xgg-notice-item"><b>征集</b>「城市肖像计划」第二季开放报名，12 月 6 日截止</span>
+        <a class="xgg-notice-link" href="#xgg-topics">查看全部更新 →</a>
+      </div>
+    </div>
+  </div>
+  <header class="xgg-header">
+    <div class="xgg-shell xgg-head-inner">
+      <a class="xgg-logo" href="#xgg-top" aria-label="西西gogo顶级艺术摄影官网首页">
+        <span class="xgg-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="15" r="8" fill="none" stroke="#e8b96a" stroke-width="2"/>
+            <circle cx="16" cy="15" r="3" fill="#e8b96a"/>
+            <rect x="8" y="25" width="16" height="2.4" rx="1.2" fill="#e8b96a" opacity=".65"/>
+          </svg>
+        </span>
+        <span class="xgg-logo-txt">
+          <span class="xgg-logo-name">西西gogo顶级艺术摄影</span>
+          <span class="xgg-logo-sub">ART · IMAGE · FILM</span>
+        </span>
+      </a>
+      <nav class="xgg-nav" id="xggMainNav" aria-label="主导航">
+        <a href="#xgg-focus">精选影像</a>
+        <a href="#xgg-topics">专题企划</a>
+        <a href="#xgg-creators">创作者</a>
+        <a href="#xgg-voices">口碑</a>
+        <a href="#xgg-board">榜单</a>
+        <a href="#xgg-faq">帮助</a>
+        <a class="xgg-nav-hot" href="#xgg-submit">投稿</a>
+      </nav>
+      <div class="xgg-head-tools">
+        <form class="xgg-search" id="xggSearchForm" role="search" onsubmit="return false;">
+          <label class="xgg-sr-only" for="xggSearchInput">搜索内容</label>
+          <input id="xggSearchInput" type="search" placeholder="搜索影像 / 创作者" autocomplete="off">
+          <button type="submit">搜索</button>
+        </form>
+        <button class="xgg-btn xgg-btn-gold" type="button" data-xgg-open="submit">我要投稿</button>
+        <button class="xgg-navtoggle" id="xggNavToggle" type="button" aria-expanded="false" aria-controls="xggMainNav" aria-label="展开导航">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="xgg-shell">
+      <div class="xgg-search-feedback" id="xggSearchFeedback" role="status" aria-live="polite"></div>
+    </div>
+  </header>
+</div>
+
+<main id="xgg-top">
+
+  <!-- ============ S2 品牌首屏 ============ -->
+  <section class="xgg-hero" aria-labelledby="xggHeroTitle">
+    <div class="xgg-shell xgg-hero-grid">
+      <div class="xgg-hero-copy">
+        <span class="xgg-hero-eyebrow">官方网站 · 艺术影像品牌</span>
+        <h1 id="xggHeroTitle">西西gogo顶级艺术摄影</h1>
+        <p class="xgg-hero-lead">
+          以光为笔，以人为题。我们把每一次快门都当作一次正式的对话——在真实的皮肤纹理、呼吸节奏与城市光线之间，捕捉值得被反复观看的那一秒。
+        </p>
+        <p class="xgg-hero-intro">
+          西西gogo顶级艺术摄影官方网站是一个面向创作者与影像爱好者的原创内容平台。企业深耕人像、时尚与观念影像领域，坚持正版、高清、可追溯的创作标准，持续运营一个多元而温暖的视觉社区，让专业表达与真实情感在同一画面里共存。
+        </p>
+        <div class="xgg-hero-actions">
+          <a class="xgg-btn xgg-btn-primary" href="#xgg-focus">观看精选影像</a>
+          <a class="xgg-btn xgg-btn-ghost" href="#xgg-essay">了解品牌理念</a>
+          <a class="xgg-btn xgg-btn-ghost" href="#xgg-creators">认识创作者</a>
+        </div>
+        <div class="xgg-hero-stats">
+          <div>
+            <div class="xgg-stat-num">1,860<span>+</span></div>
+            <div class="xgg-stat-label">原创影像作品</div>
+          </div>
+          <div>
+            <div class="xgg-stat-num">327<span>位</span></div>
+            <div class="xgg-stat-label">签约与入驻创作者</div>
+          </div>
+          <div>
+            <div class="xgg-stat-num">9.4<span>分</span></div>
+            <div class="xgg-stat-label">社区综合口碑评分</div>
+          </div>
+        </div>
+      </div>
+      <div class="xgg-hero-visual">
+        <div class="xgg-hero-frame">
+          <svg viewBox="0 0 640 590" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="暗调影棚中模特侧脸与金色轮廓光的艺术摄影主视觉">
+            <defs>
+              <linearGradient id="xggHeroBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1b222b"/>
+                <stop offset="0.55" stop-color="#252d38"/>
+                <stop offset="1" stop-color="#141a21"/>
+              </linearGradient>
+              <linearGradient id="xggHeroSkin" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#e8c9a4"/>
+                <stop offset="0.6" stop-color="#c99a72"/>
+                <stop offset="1" stop-color="#8e6446"/>
+              </linearGradient>
+              <linearGradient id="xggHeroGlow" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#e8b96a" stop-opacity="0"/>
+                <stop offset="0.5" stop-color="#e8b96a" stop-opacity=".85"/>
+                <stop offset="1" stop-color="#f6e2b8" stop-opacity="0"/>
+              </linearGradient>
+              <radialGradient id="xggHeroSpot" cx="0.72" cy="0.32" r="0.62">
+                <stop offset="0" stop-color="#f0d9ae" stop-opacity=".38"/>
+                <stop offset="1" stop-color="#f0d9ae" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="640" height="590" fill="url(#xggHeroBg)"/>
+            <rect width="640" height="590" fill="url(#xggHeroSpot)"/>
+            <!-- 背景网格与灯位 -->
+            <g stroke="#3a4553" stroke-width="1" opacity=".55">
+              <line x1="60" y1="0" x2="60" y2="590"/>
+              <line x1="580" y1="0" x2="580" y2="590"/>
+              <line x1="0" y1="470" x2="640" y2="470"/>
+            </g>
+            <circle cx="466" cy="150" r="86" fill="none" stroke="#546072" stroke-width="1.2" opacity=".7"/>
+            <circle cx="466" cy="150" r="58" fill="none" stroke="#546072" stroke-width="1.2" opacity=".45"/>
+            <!-- 人物肩线 -->
+            <path d="M150 590 C160 470 250 420 330 415 C420 410 500 452 520 590 Z" fill="#0f141a"/>
+            <!-- 颈部与头型 -->
+            <path d="M296 400 C300 350 296 320 318 292 C340 262 392 258 418 288 C444 318 442 356 434 402 C428 436 388 452 356 448 C324 444 294 430 296 400 Z" fill="url(#xggHeroSkin)"/>
+            <!-- 侧脸轮廓 -->
+            <path d="M418 288 C452 300 462 332 456 362 C452 384 440 400 424 406" fill="none" stroke="#f4dcb6" stroke-width="2.2" opacity=".85"/>
+            <!-- 发丝 -->
+            <path d="M300 300 C286 250 320 214 366 212 C412 210 444 246 440 292 C438 314 430 322 424 330 C420 292 396 268 362 270 C330 272 306 292 300 300 Z" fill="#10161d"/>
+            <path d="M306 318 C292 282 304 240 336 224" fill="none" stroke="#2c3542" stroke-width="3" opacity=".8"/>
+            <!-- 五官暗示 -->
+            <path d="M392 330 C404 334 410 342 406 350" fill="none" stroke="#7d5638" stroke-width="2" opacity=".8"/>
+            <path d="M404 372 C410 374 414 378 410 382" fill="none" stroke="#8a5f40" stroke-width="2" opacity=".7"/>
+            <!-- 金色轮廓光 -->
+            <path d="M418 288 C452 300 462 332 456 362 C452 384 440 400 424 406" fill="none" stroke="url(#xggHeroGlow)" stroke-width="10" stroke-linecap="round"/>
+            <path d="M300 300 C286 250 320 214 366 212" fill="none" stroke="url(#xggHeroGlow)" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+            <!-- 相机取景框 -->
+            <g stroke="#e8b96a" stroke-width="2.4" fill="none" opacity=".9">
+              <path d="M60 60 L60 96 M60 60 L96 60"/>
+              <path d="M580 60 L580 96 M580 60 L544 60"/>
+              <path d="M60 530 L60 494 M60 530 L96 530"/>
+              <path d="M580 530 L580 494 M580 530 L544 530"/>
+            </g>
+            <!-- 参数标签 -->
+            <g font-family="monospace" font-size="12" fill="#c3a97c" opacity=".9">
+              <text x="76" y="500">ISO 200</text>
+              <text x="76" y="518">85mm · f/1.8</text>
+              <text x="500" y="500">1/160s</text>
+            </g>
+          </svg>
+          <div class="xgg-hero-badge">
+            <span class="xgg-live-dot" aria-hidden="true"></span>
+            <span><b>正在展映</b> 《侧脸与金色时刻》第 3 辑 · 官方精品内容</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ S3 焦点内容 + 视频流 ============ -->
+  <section class="xgg-section xgg-anchor" id="xgg-focus" aria-labelledby="xggFocusTitle">
+    <div class="xgg-shell">
+      <div class="xgg-sec-head">
+        <div>
+          <div class="xgg-sec-kicker">FOCUS / 焦点</div>
+          <h2 id="xggFocusTitle">本周焦点：一场关于轮廓与留白的影像实验</h2>
+          <p class="xgg-sec-desc">精选西西gogo顶级艺术摄影的原创视频内容，从影棚到街巷，记录光线如何参与人物的叙事。</p>
+        </div>
+        <a class="xgg-sec-more" href="#xgg-topics">更多专题企划 →</a>
+      </div>
+
+      <div class="xgg-focus-grid">
+        <article class="xgg-focus-main">
+          <div class="xgg-focus-thumb">
+            <svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="电影感客厅布光，模特立于百叶窗光影中的人像创作现场画面">
+              <defs>
+                <linearGradient id="xggF1a" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#2b3340"/>
+                  <stop offset="1" stop-color="#131920"/>
+                </linearGradient>
+                <linearGradient id="xggF1b" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#f3dcb4" stop-opacity=".9"/>
+                  <stop offset="1" stop-color="#c79a5f" stop-opacity=".15"/>
+                </linearGradient>
+              </defs>
+              <rect width="800" height="450" fill="url(#xggF1a)"/>
+              <!-- 百叶窗光带 -->
+              <g fill="url(#xggF1b)" opacity=".72">
+                <polygon points="60,0 120,0 260,450 190,450"/>
+                <polygon points="150,0 214,0 360,450 286,450"/>
+                <polygon points="246,0 312,0 464,450 388,450"/>
+                <polygon points="342,0 410,0 566,450 490,450"/>
+              </g>
+              <!-- 窗框 -->
+              <rect x="40" y="0" width="400" height="450" fill="none" stroke="#4a5666" stroke-width="2" opacity=".6"/>
+              <!-- 人物剪影 -->
+              <g>
+                <path d="M520 450 C520 372 556 340 596 336 C636 332 672 364 676 450 Z" fill="#0d1218"/>
+                <circle cx="598" cy="292" r="36" fill="#0f151c"/>
+                <path d="M572 268 C566 240 590 224 610 228 C632 232 642 252 636 272 C626 252 604 246 590 256 C580 262 576 268 572 268 Z" fill="#0b1016"/>
+                <path d="M632 286 C646 292 650 308 646 322" fill="none" stroke="#e8b96a" stroke-width="3" opacity=".85"/>
+              </g>
+              <!-- 相机与三脚架 -->
+              <g stroke="#5c6878" stroke-width="3" fill="none">
+                <line x1="120" y1="330" x2="96" y2="450"/>
+                <line x1="120" y1="330" x2="146" y2="450"/>
+                <line x1="120" y1="330" x2="120" y2="450"/>
+              </g>
+              <rect x="100" y="300" width="42" height="28" rx="4" fill="#3b4654" stroke="#78869a" stroke-width="1.6"/>
+              <circle cx="121" cy="314" r="9" fill="#1c242e" stroke="#9fb0c4" stroke-width="1.6"/>
+              <!-- 提示文字 -->
+              <g font-family="monospace" font-size="12" fill="#b9c6d6" opacity=".85">
+                <text x="40" y="424">STUDIO B / 14:20</text>
+              </g>
+              <rect x="700" y="30" width="60" height="1" fill="#e8b96a" opacity=".5"/>
+            </svg>
+          </div>
+          <div class="xgg-focus-body">
+            <div class="xgg-tagrow">
+              <span class="xgg-tag">创作幕后</span>
+              <span class="xgg-tag is-ink">电影感布光</span>
+              <span class="xgg-tag is-ink">人像</span>
+            </div>
+            <h3 class="xgg-focus-title">《百叶窗下的十四分钟》：一支影棚人像的完整布光记录</h3>
+            <p class="xgg-focus-text">从测光表读数到最后一盏灯收工，我们把一次商业人像拍摄毫无保留地摊开在镜头前。为什么不用柔光箱？为什么额头要留一块暗？答案都在片子里。</p>
+            <div class="xgg-meta">
+              <span>作者 <b>林砚舟</b></span>
+              <span>播放 <b>28.6万</b></span>
+              <span>时长 <b>14:32</b></span>
+              <span>口碑 <b>9.6</b></span>
+            </div>
+            <div class="xgg-card-actions">
+              <button class="xgg-act" type="button" data-xgg-like="focus1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 20s-7-4.6-7-9.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 7 3.4C19 15.4 12 20 12 20z"/></svg>
+                <span class="xgg-like-num">2,431</span> 有用
+              </button>
+              <button class="xgg-act" type="button" data-xgg-save="focus1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 4h12v16l-6-4-6 4z"/></svg>
+                收藏
+              </button>
+              <button class="xgg-act" type="button" data-xgg-copy="share">复制链接</button>
+              <button class="xgg-act" type="button" data-xgg-open="feedback">反馈</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="xgg-focus-side">
+          <article class="xgg-textcard">
+            <div class="xgg-tagrow"><span class="xgg-tag">人物访谈</span><span class="xgg-tag is-ink">观念影像</span></div>
+            <h3>《我不会让人看镜头》：与三位观念摄影师的夜谈</h3>
+            <p>当被摄者忘记镜头存在，真实才开始显影。三位创作者聊了聊他们如何说服陌生人、如何面对失败的一次拍摄。</p>
+            <div class="xgg-meta"><span>作者 <b>白鹿野</b></span><span>播放 <b>16.2万</b></span><span>收藏 <b>8,904</b></span></div>
+          </article>
+          <article class="xgg-textcard">
+            <div class="xgg-tagrow"><span class="xgg-tag">教程干货</span><span class="xgg-tag is-ink">后期</span></div>
+            <h3>肤色不假白的五个步骤：艺术摄影调色工作流</h3>
+            <p>从灰片到成片，我们把一套可复用的调色节点拆成五个动作，重点讲解高光皮肤的保留与暗部色彩的回暖。</p>
+            <div class="xgg-meta"><span>作者 <b>周叙白</b></span><span>播放 <b>22.9万</b></span><span>收藏 <b>1.2万</b></span></div>
+          </article>
+          <article class="xgg-textcard">
+            <div class="xgg-tagrow"><span class="xgg-tag">城市探索</span><span class="xgg-tag is-ink">在地文化</span></div>
+            <h3>跟着摄影师逛老城：一天里最好的四段自然光</h3>
+            <p>老城区的骑楼、巷口与菜市场，是西西gogo顶级艺术摄影外拍最常用的取景地。这支视频把时间表和机位一起给你。</p>
+            <div class="xgg-meta"><span>作者 <b>陈也川</b></span><span>播放 <b>11.7万</b></span><span>时长 <b>18:05</b></span></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="xgg-list-wrap">
+        <h3 class="xgg-list-title">视频流 · 本期热播</h3>
+        <div class="xgg-video-list" id="xggVideoList">
+          <div class="xgg-vrow" data-xgg-key="逆光肖像">
+            <div class="xgg-vrank">01</div>
+            <div class="xgg-vbody">
+              <h3>逆光里的皮肤：一支人像短片的曝光取舍</h3>
+              <p>为什么要让脸欠曝半档？这支短片用三组对照镜头讲清了逆光人像的情绪逻辑。</p>
+              <div class="xgg-tagrow"><span class="xgg-tag">深度测评</span><span class="xgg-tag is-ink">逆光</span></div>
+            </div>
+            <div class="xgg-vside">
+              <div class="xgg-vdata">播放 <b>19.4万</b><br>收藏 <b>6,712</b></div>
+              <button class="xgg-act" type="button" data-xgg-like="v1"><span class="xgg-like-num">1,208</span> 有用</button>
+              <button class="xgg-act" type="button" data-xgg-copy="share">分享</button>
+            </div>
+          </div>
+          <div class="xgg-vrow" data-xgg-key="时尚片场">
+            <div class="xgg-vrank">02</div>
+            <div class="xgg-vbody">
+              <h3>时尚片场的十二小时：从试装到封面定稿</h3>
+              <p>一支跟随式纪录短片，完整呈现品牌大片的生产流程与团队协作的现场细节。</p>
+              <div class="xgg-tagrow"><span class="xgg-tag">品牌故事</span><span class="xgg-tag is-ink">时尚</span></div>
+            </div>
+            <div class="xgg-vside">
+              <div class="xgg-vdata">播放 <b>15.8万</b><br>收藏 <b>5,120</b></div>
+              <button class="xgg-act" type="button" data-xgg-like="v2"><span class="xgg-like-num">986</span> 有用</button>
+              <button class="xgg-act" type="button" data-xgg-copy="share">分享</button>
+            </div>
+          </div>
+          <div class="xgg-vrow" data-xgg-key="街拍肖像">
+            <div class="xgg-vrank">03</div>
+            <div class="xgg-vbody">
+              <h3>街拍肖像怎么不冒犯：许可、距离与三句开场话术</h3>
+              <p>一段真实的外拍记录，包含被拒绝的瞬间，以及创作者如何处理边界与尊重。</p>
+              <div class="xgg-tagrow"><span class="xgg-tag">实用技巧</span><span class="xgg-tag is-ink">街拍</span></div>
+            </div>
+            <div class="xgg-vside">
+              <div class="xgg-vdata">播放 <b>13.1万</b><br>收藏 <b>4,388</b></div>
+              <button class="xgg-act" type="button" data-xgg-like="v3"><span class="xgg-like-num">754</span> 有用</button>
+              <button class="xgg-act" type="button" data-xgg-copy="share">分享</button>
+            </div>
+          </div>
+          <div class="xgg-vrow" data-xgg-key="黑白暗房">
+            <div class="xgg-vrank">04</div>
+            <div class="xgg-vbody">
+              <h3>回到暗房：黑白银盐放大的一次完整操作</h3>
+              <p>数字时代为什么还要洗照片？这支片子在红灯下待了整整四十分钟。</p>
+              <div class="xgg-tagrow"><span class="xgg-tag">艺术美学</span><span class="xgg-tag is-ink">黑白</span></div>
+            </div>
+            <div class="xgg-vside">
+              <div class="xgg-vdata">播放 <b>9.6万</b><br>收藏 <b>3,201</b></div>
+              <button class="xgg-act" type="button" data-xgg-like="v4"><span class="xgg-like-num">612</span> 有用</button>
+              <button class="xgg-act" type="button" data-xgg-copy="share">分享</button>
+            </div>
+          </div>
+          <div class="xgg-vrow" data-xgg-key="孕期影像">
+            <div class="xgg-vrank">05</div>
+            <div class="xgg-vbody">
+              <h3>为一位孕妈妈拍一组不摆拍的照片</h3>
+              <p>情感故事向的纪录短片，关于身体的变化、家庭的等待，以及一次安静的拍摄。</p>
+              <div class="xgg-tagrow"><span class="xgg-tag">情感故事</span><span class="xgg-tag is-ink">家庭影像</span></div>
+            </div>
+            <div class="xgg-vside">
+              <div class="xgg-vdata">播放 <b>8.2万</b><br>收藏 <b>2,977</b></div>
+              <button class="xgg-act" type="button" data-xgg-like="v5"><span class="xgg-like-num">534</span> 有用</button>
+              <button class="xgg-act" type="button" data-xgg-copy="share">分享</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 关键词解析 / 品牌深度解析 ============ -->
+  <section class="xgg-section xgg-anchor" id="xgg-essay" aria-labelledby="xggEssayTitle">
+    <div class="xgg-shell">
+      <div class="xgg-essay">
+        <div class="xgg-sec-kicker">INSIGHT / 深度解析</div>
+        <h2 id="xggEssayTitle">西西gogo顶级艺术摄影：一个艺术影像品牌如何把“顶级”讲清楚</h2>
+        <p>“顶级”在影像行业里是一个很容易被滥用的词。它可能指器材，可能指价格，也可能只是营销话术。西西gogo顶级艺术摄影希望把它还原成可以验证的东西：稳定的审美判断、可复用的拍摄方法、经得起放大的画质，以及一群愿意长期认真创作的作者。作为官方网站，这个平台首先是一份可查证的档案——每一支视频都标注作者、拍摄条件与后期路径，每一次品牌发布都留下时间线。</p>
+
+        <div class="xgg-essay-grid">
+          <div>
+            <h3>一、从一次拍摄到一套标准</h3>
+            <p>艺术摄影的门槛从来不只在设备。企业内部的创作标准文档里，第一页写的不是参数，而是“先看人，再看光”。我们要求每一位签约创作者在正式拍摄前完成一次不少于二十分钟的沟通，确认被摄者对被观看方式的感受。这听起来像是效率的敌人，但它带来的结果是：成片里几乎看不到僵硬的手和僵硬的肩。西西gogo顶级艺术摄影的精品内容之所以能被反复观看，很大程度是因为被摄者在那几秒里是放松的。</p>
+            <p>标准化的第二步是光线。影棚人像常用的大面积柔光并不总是答案，尤其当被摄者面部结构立体时，柔光会把结构抹平。我们更常用侧向硬光加一块反光板，在颧骨下方留出可控的过渡区。这类判断无法被简化成一套预设，所以平台把它拆成视频教程：为什么这盏灯要往后退三十厘米，为什么背景要故意压暗一档。这些细节构成了品牌的品质底色，也让“官方发布”的内容具备可学习性。</p>
+            <h3>二、内容生态里的三种角色</h3>
+            <p>一个健康的影像社区需要三种角色：创作者、观看者与协作者。创作者提供原创作品与方法论；观看者用收藏、评论与投票表达偏好；协作者则包括造型、化妆、灯光助理、后期修图与场地方，他们把一次拍摄从想法变成现实。西西gogo顶级艺术摄影的专题企划会刻意把协作者推到台前，因为一支好片子的署名权不应只属于按下快门的那个人。这也是平台强调“正版”与“可追溯”的原因：署名清晰，合作才会持续。</p>
+            <p>为了让新加入的作者有成长路径，平台设置了新人榜与口碑榜两套评价体系。前者看首支作品的完成度与社区反馈，后者看长期作品质量与评论质量。我们不鼓励单纯追逐播放量，因为流量并不等于影响力；一个只有三百次播放但让同行认真讨论的短片，往往比十万播放的糖水片更有价值。</p>
+          </div>
+          <div>
+            <h3>三、真实感是技术问题，也是伦理问题</h3>
+            <p>很多人以为真实感来自“不修图”。实际上，完全不修的商业人像往往显得粗糙，过度修饰又会让人失真。我们的做法是把修图拆成三层：结构层只做必要的瑕疵处理，色彩层保留肤色里的红与黄，质感层用高频保留毛孔与绒毛。三层之间不互相覆盖，任何一步都可以回退。这套流程被整理成公开课，放在平台的教程频道里，任何人都可以照着练。</p>
+            <p>比技术更重要的是伦理。拍摄陌生人、拍摄身体、拍摄情绪脆弱的时刻，都需要明确的同意。平台在投稿规范中写明：涉及可识别个人的影像必须获得授权；涉及未成年人的内容必须由监护人确认；涉及敏感议题的作品需要说明创作意图。这些条款并不讨喜，但它们决定了一个品牌能否被长期信任。我们相信，用户至上不是把所有内容都放出来，而是把该守的边界守住。</p>
+            <p>从行业观察的角度看，艺术摄影正在经历一次结构性变化：器材门槛下降，审美门槛上升。手机可以拍出不错的画面，但很难替代对光线的理解与对人的耐心。西西gogo顶级艺术摄影选择深耕垂直领域，不追求内容的无限扩张，而是把每一季的专题做扎实。我们持续运营的专题企划通常只包含三到五组作品，但每组都配有创作手记、布光图与失败案例。失败案例是我们最看重的部分，因为观众从成功里学到的往往不如从失败里学到的多。</p>
+            <p>未来一年，平台计划把线下工作坊与线上内容打通：视频里讲过的布光方案，会在工作坊里让学员亲手复现；工作坊产出的优秀作品，会以官方发布的形式回到线上。这种双向流动让社区不只是一个观看的地方，也是一个练习的地方。我们把它称为“可练习的内容生态”，这或许是“顶级”二字最朴素的解释——不是永远正确，而是永远可以被检验。</p>
+          </div>
+        </div>
+
+        <div class="xgg-essay-quote">
+          <b>品牌理念摘录：</b>“我们相信影像的力量来自真实，而不是完美。每一次快门都应该对得起被摄者的信任，也对得起观看者的时间。”——西西gogo顶级艺术摄影创作委员会
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 专题企划 ============ -->
+  <section class="xgg-section xgg-anchor" id="xgg-topics" aria-labelledby="xggTopicTitle">
+    <div class="xgg-shell">
+      <div class="xgg-sec-head">
+        <div>
+          <div class="xgg-sec-kicker">SERIES / 专题企划</div>
+          <h2 id="xggTopicTitle">正在进行的专题：把摄影拆成可以练习的章节</h2>
+          <p class="xgg-sec-desc">每个专题由西西gogo顶级艺术摄影官方策划，包含视频、图文与可下载的拍摄清单，持续更新。</p>
+        </div>
+      </div>
+
+      <div class="xgg-topic-grid">
+        <article class="xgg-topic">
+          <div class="xgg-topic-img">
+            <svg viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="大面积留白的人像构图示意，人物偏右、左侧空白与一条水平线">
+              <rect width="480" height="270" fill="#f2ede2"/>
+              <rect x="0" y="196" width="480" height="1.4" fill="#c9bda5"/>
+              <circle cx="352" cy="104" r="42" fill="#c99a72"/>
+              <path d="M310 270 C314 208 336 186 366 184 C398 182 420 206 424 270 Z" fill="#1d232d"/>
+              <path d="M352 62 C374 62 390 78 388 100 C386 118 376 130 360 132" fill="none" stroke="#a87b52" stroke-width="2"/>
+              <rect x="48" y="70" width="150" height="2" fill="#b8862f" opacity=".55"/>
+              <rect x="48" y="86" width="96" height="2" fill="#b8862f" opacity=".35"/>
+              <text x="48" y="128" font-family="monospace" font-size="11" fill="#9a8f7c">RULE / 1:2.6</text>
+            </svg>
+          </div>
+          <div class="xgg-topic-body">
+            <span class="xgg-status">更新至第 5 集</span>
+            <h3>光的标点：人像摄影的留白课</h3>
+            <p>把构图里的空白当作一种语气。八集内容从留白的比例讲到情绪的停顿，每集配一份可打印的取景清单。</p>
+            <ul class="xgg-topic-items">
+              <li>第 1 集：为什么右侧留白比左侧更“安静”</li>
+              <li>第 4 集：用一条水平线托住人物的重量</li>
+              <li>第 5 集：面部朝向与画面边缘的距离控制</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="xgg-topic">
+          <div class="xgg-topic-img">
+            <svg viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="城市夜景人像示意，路灯暖光与深蓝街道构成冷暖对比">
+              <defs>
+                <linearGradient id="xggT2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#1a2431"/>
+                  <stop offset="1" stop-color="#2c3644"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#xggT2)"/>
+              <g fill="#151c25">
+                <rect x="0" y="150" width="120" height="120"/>
+                <rect x="130" y="120" width="90" height="150"/>
+                <rect x="330" y="136" width="150" height="134"/>
+              </g>
+              <g fill="#e0b573" opacity=".8">
+                <rect x="20" y="170" width="10" height="14"/>
+                <rect x="48" y="170" width="10" height="14"/>
+                <rect x="150" y="146" width="9" height="13"/>
+                <rect x="176" y="146" width="9" height="13"/>
+                <rect x="356" y="162" width="9" height="13"/>
+                <rect x="384" y="162" width="9" height="13"/>
+              </g>
+              <path d="M240 270 C242 216 258 196 278 194 C300 192 314 212 316 270 Z" fill="#0e131a"/>
+              <circle cx="278" cy="170" r="22" fill="#141a22"/>
+              <path d="M296 166 C308 172 310 186 304 196" fill="none" stroke="#e8b96a" stroke-width="3"/>
+              <circle cx="330" cy="90" r="18" fill="#f0cf92" opacity=".9"/>
+              <circle cx="330" cy="90" r="34" fill="#f0cf92" opacity=".12"/>
+              <line x1="330" y1="0" x2="330" y2="72" stroke="#5d6a7c" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="xgg-topic-body">
+            <span class="xgg-status is-warm">报名中 · 12月6日截止</span>
+            <h3>城市肖像计划 · 第二季</h3>
+            <p>面向所有创作者的照片与短片征集。我们提供取景地清单与拍摄许可沟通模板，入选作品将在官网首页展映。</p>
+            <ul class="xgg-topic-items">
+              <li>主题：我在这座城市里遇见的一张脸</li>
+              <li>提交：3-8 张照片或 1-3 分钟短片</li>
+              <li>权益：官方展映 + 创作者专访 + 工作坊名额</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="xgg-topic">
+          <div class="xgg-topic-img">
+            <svg viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="暗房红灯下的相纸与放大机示意图，红黑配色">
+              <rect width="480" height="270" fill="#1c1213"/>
+              <circle cx="240" cy="60" r="46" fill="#a63a2b" opacity=".28"/>
+              <circle cx="240" cy="60" r="20" fill="#d4644f" opacity=".75"/>
+              <rect x="150" y="120" width="180" height="14" rx="3" fill="#3a3033"/>
+              <rect x="196" y="90" width="88" height="30" rx="3" fill="#2a2326" stroke="#5a4a4d" stroke-width="1.4"/>
+              <rect x="140" y="170" width="200" height="70" rx="4" fill="#2a2225" stroke="#5a4a4d" stroke-width="1.4"/>
+              <rect x="160" y="186" width="160" height="38" fill="#efe6d8" opacity=".92"/>
+              <g fill="#7d6c6f">
+                <rect x="120" y="240" width="220" height="10" rx="4"/>
+              </g>
+              <text x="30" y="250" font-family="monospace" font-size="11" fill="#c98a7c">SAFE LIGHT / ON</text>
+            </svg>
+          </div>
+          <div class="xgg-topic-body">
+            <span class="xgg-status">更新至第 3 集</span>
+            <h3>银盐往回走：数码时代的黑白练习</h3>
+            <p>一组关于黑白影像的慢内容。从测光到放大，每集四十分钟，适合在周末慢慢看完，跟着做一遍。</p>
+            <ul class="xgg-topic-items">
+              <li>第 1 集：黑白不是去色，是重新分配明暗</li>
+              <li>第 2 集：一卷胶片的十二次曝光决策</li>
+              <li>第 3 集：放大机下的局部加减光</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 创作者矩阵 ============ -->
+  <section class="xgg-section xgg-anchor" id="xgg-creators" aria-labelledby="xggAuthorTitle">
+    <div class="xgg-shell">
+      <div class="xgg-sec-head">
+        <div>
+          <div class="xgg-sec-kicker">CREATORS / 创作者</div>
+          <h2 id="xggAuthorTitle">西西gogo顶级艺术摄影的作者矩阵</h2>
+          <p class="xgg-sec-desc">他们来自影棚、街头、暗房与剧场，擅长不同，但都相信耐心是一种技术。</p>
+        </div>
+        <a class="xgg-sec-more" href="#xgg-submit">申请成为创作者 →</a>
+      </div>
+
+      <div class="xgg-author-grid">
+        <article class="xgg-author">
+          <div class="xgg-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="创作者林砚舟的头像，深蓝底与金色几何图形">
+              <rect width="64" height="64" fill="#1d2733"/>
+              <circle cx="32" cy="26" r="11" fill="#e8b96a"/>
+              <path d="M12 64 C14 46 22 40 32 40 C42 40 50 46 52 64 Z" fill="#e8b96a" opacity=".85"/>
+              <path d="M40 16 C44 20 44 28 40 32" fill="none" stroke="#f2e2c2" stroke-width="2"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="xgg-author-name">林砚舟 <span>签约作者</span></h3>
+            <div class="xgg-author-field">影棚人像 · 商业布光</div>
+            <p class="xgg-author-desc">十二年商业人像经验，习惯先画布光图再开机。作品以克制的硬光与明确的轮廓著称，主张“把情绪留在阴影里”。在西西gogo负责影棚系列课程与品牌大片执行。</p>
+            <div class="xgg-author-data"><span>作品 <b>146</b></span><span>粉丝 <b>12.8万</b></span></div>
+            <button class="xgg-author-btn" type="button" data-xgg-open="author" data-xgg-name="林砚舟" data-xgg-field="影棚人像 · 商业布光">查看档案</button>
+          </div>
+        </article>
+
+        <article class="xgg-author">
+          <div class="xgg-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="创作者白鹿野的头像，米白底与墨绿人物剪影">
+              <rect width="64" height="64" fill="#eae4d6"/>
+              <circle cx="32" cy="25" r="10" fill="#2f5a45"/>
+              <path d="M14 64 C16 48 23 42 32 42 C41 42 48 48 50 64 Z" fill="#2f5a45"/>
+              <rect x="42" y="12" width="12" height="12" fill="#b8862f" opacity=".7"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="xgg-author-name">白鹿野 <span>签约作者</span></h3>
+            <div class="xgg-author-field">观念影像 · 人物访谈</div>
+            <p class="xgg-author-desc">从纪录片转行做静态影像，擅长在采访里捕捉人物失控的一瞬。她的作品常被形容为“有呼吸感”，在西西gogo主持观念影像专栏与夜谈系列。</p>
+            <div class="xgg-author-data"><span>作品 <b>98</b></span><span>粉丝 <b>9.6万</b></span></div>
+            <button class="xgg-author-btn" type="button" data-xgg-open="author" data-xgg-name="白鹿野" data-xgg-field="观念影像 · 人物访谈">查看档案</button>
+          </div>
+        </article>
+
+        <article class="xgg-author">
+          <div class="xgg-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="创作者周叙白的头像，灰紫底与白色调色环">
+              <rect width="64" height="64" fill="#3b3548"/>
+              <circle cx="32" cy="32" r="16" fill="none" stroke="#e6e0f0" stroke-width="4"/>
+              <path d="M32 16 A16 16 0 0 1 48 32" fill="none" stroke="#b8862f" stroke-width="4"/>
+              <circle cx="32" cy="32" r="5" fill="#e6e0f0"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="xgg-author-name">周叙白 <span>签约作者</span></h3>
+            <div class="xgg-author-field">后期调色 · 数字影像</div>
+            <p class="xgg-author-desc">前电影调色师，现专注静态影像的色彩工作流。他坚持“先修光，再修色”，把电影级的节点思路带进人像后期，是平台上教程类内容收藏率最高的作者之一。</p>
+            <div class="xgg-author-data"><span>作品 <b>121</b></span><span>粉丝 <b>15.3万</b></span></div>
+            <button class="xgg-author-btn" type="button" data-xgg-open="author" data-xgg-name="周叙白" data-xgg-field="后期调色 · 数字影像">查看档案</button>
+          </div>
+        </article>
+
+        <article class="xgg-author">
+          <div class="xgg-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="创作者陈也川的头像，暖橙底与城市天际线插画">
+              <rect width="64" height="64" fill="#d98b45"/>
+              <g fill="#3a2416">
+                <rect x="8" y="38" width="10" height="26"/>
+                <rect x="22" y="28" width="9" height="36"/>
+                <rect x="35" y="34" width="11" height="30"/>
+                <rect x="50" y="24" width="8" height="40"/>
+              </g>
+              <circle cx="46" cy="14" r="7" fill="#f7e6c8"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="xgg-author-name">陈也川 <span>入驻作者</span></h3>
+            <div class="xgg-author-field">城市探索 · 街拍肖像</div>
+            <p class="xgg-author-desc">常年在老城区步行拍摄，熟悉每一条巷子的光线时刻表。他主张“先聊十分钟再举相机”，认为街拍最重要的技能是礼貌。负责平台的城市肖像计划外拍领队。</p>
+            <div class="xgg-author-data"><span>作品 <b>203</b></span><span>粉丝 <b>7.4万</b></span></div>
+            <button class="xgg-author-btn" type="button" data-xgg-open="author" data-xgg-name="陈也川" data-xgg-field="城市探索 · 街拍肖像">查看档案</button>
+          </div>
+        </article>
+
+        <article class="xgg-author">
+          <div class="xgg-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="创作者苏合的头像，黑色底与红色圆形和白色笔触">
+              <rect width="64" height="64" fill="#141414"/>
+              <circle cx="26" cy="28" r="14" fill="#a63a2b"/>
+              <path d="M38 50 C44 42 52 40 58 44" fill="none" stroke="#f1ece2" stroke-width="3"/>
+              <rect x="8" y="48" width="20" height="4" fill="#f1ece2" opacity=".7"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="xgg-author-name">苏合 <span>签约作者</span></h3>
+            <div class="xgg-author-field">黑白暗房 · 艺术美学</div>
+            <p class="xgg-author-desc">在城郊经营一间小暗房，坚持银盐放大十余年。她的黑白作品强调肌理与颗粒，认为“数码给了我们选择，但暗房给了我们等待”。在平台主讲黑白练习专题。</p>
+            <div class="xgg-author-data"><span>作品 <b>87</b></span><span>粉丝 <b>6.9万</b></span></div>
+            <button class="xgg-author-btn" type="button" data-xgg-open="author" data-xgg-name="苏合" data-xgg-field="黑白暗房 · 艺术美学">查看档案</button>
+          </div>
+        </article>
+
+        <article class="xgg-author">
+          <div class="xgg-avatar">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="创作者何真一的头像，青绿色底与相机构造线条">
+              <rect width="64" height="64" fill="#2b5f63"/>
+              <rect x="12" y="22" width="40" height="26" rx="5" fill="none" stroke="#e9f2ef" stroke-width="3"/>
+              <circle cx="32" cy="35" r="8" fill="none" stroke="#e9f2ef" stroke-width="3"/>
+              <rect x="24" y="14" width="16" height="8" rx="2" fill="#e9f2ef" opacity=".8"/>
+              <circle cx="46" cy="28" r="2.4" fill="#b8862f"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="xgg-author-name">何真一 <span>新锐作者</span></h3>
+            <div class="xgg-author-field">创意合成 · 科技影像</div>
+            <p class="xgg-author-desc">九零后视觉实验者，把三维渲染与实拍人像拼在一起。他关注技术如何改变观看方式，作品常带有轻微的未来感。是平台新人榜连续三个月的第一名。</p>
+            <div class="xgg-author-data"><span>作品 <b>54</b></span><span>粉丝 <b>4.2万</b></span></div>
+            <button class="xgg-author-btn" type="button" data-xgg-open="author" data-xgg-name="何真一" data-xgg-field="创意合成 · 科技影像">查看档案</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 评价（引用摘录） ============ -->
+  <section class="xgg-section xgg-anchor" id="xgg-voices" aria-labelledby="xggVoicesTitle">
+    <div class="xgg-shell">
+      <div class="xgg-sec-head">
+        <div>
+          <div class="xgg-sec-kicker">VOICES / 口碑</div>
+          <h2 id="xggVoicesTitle">社区里的真实评价：关于西西gogo顶级艺术摄影</h2>
+          <p class="xgg-sec-desc">来自学员、客户、合作方与普通观众的声音，我们原样保留，包括批评。</p>
+        </div>
+        <a class="xgg-sec-more" href="#xgg-submit">写下你的反馈 →</a>
+      </div>
+
+      <div class="xgg-quote-grid">
+        <article class="xgg-quote">
+          <div class="xgg-quote-mark" aria-hidden="true">“</div>
+          <p>报了工作坊之后才发现自己以前一直在“猜光”。老师让我们用测光表一格一格试，拍到第七张才明白侧光为什么好看。回去重拍了一组，客户当场定了终稿。</p>
+          <div class="xgg-quote-who">
+            <span class="xgg-quote-dot" style="background:#b8862f;">郑</span>
+            <div><b>郑予安</b><em>自由摄影师 · 工作坊学员</em></div>
+          </div>
+        </article>
+        <article class="xgg-quote">
+          <div class="xgg-quote-mark" aria-hidden="true">“</div>
+          <p>作为被拍的人，我一开始很紧张。摄影师花了很久跟我聊，问我希望别人看到什么样的自己。最后那组照片我用了三年当头像，家里也挂了一张。</p>
+          <div class="xgg-quote-who">
+            <span class="xgg-quote-dot" style="background:#2f5a45;">沈</span>
+            <div><b>沈听澜</b><em>客户 · 家庭影像</em></div>
+          </div>
+        </article>
+        <article class="xgg-quote">
+          <div class="xgg-quote-mark" aria-hidden="true">“</div>
+          <p>内容质量很稳，但更新速度确实慢。有时候等一个专题的下集要等两周。不过慢也有慢的好处，每集都能跟着做，而不是看完就忘。</p>
+          <div class="xgg-quote-who">
+            <span class="xgg-quote-dot" style="background:#3b3548;">罗</span>
+            <div><b>罗一鸣</b><em>社区会员 · 三年老用户</em></div>
+          </div>
+        </article>
+        <article class="xgg-quote">
+          <div class="xgg-quote-mark" aria-hidden="true">“</div>
+          <p>我们品牌去年的大片由他们执行，最打动我的是流程透明。布光图、色卡、修图阶段的对比图都有存档，后面做延展物料时特别省事，沟通成本低了很多。</p>
+          <div class="xgg-quote-who">
+            <span class="xgg-quote-dot" style="background:#a63a2b;">许</span>
+            <div><b>许知远</b><em>某服饰品牌市场负责人</em></div>
+          </div>
+        </article>
+        <article class="xgg-quote">
+          <div class="xgg-quote-mark" aria-hidden="true">“</div>
+          <p>投稿审核有点严，我第一次提交被打回，原因是缺少模特授权说明。当时有点不爽，后来理解了，这个行业确实需要这样的边界。</p>
+          <div class="xgg-quote-who">
+            <span class="xgg-quote-dot" style="background:#d98b45;">叶</span>
+            <div><b>叶望舒</b><em>新锐创作者</em></div>
+          </div>
+        </article>
+        <article class="xgg-quote">
+          <div class="xgg-quote-mark" aria-hidden="true">“</div>
+          <p>我最喜欢的是失败案例那一部分。别的地方只给你看成功作品，这里会告诉你哪盏灯放错了、为什么背景脏了。这种坦诚在行业里很少见。</p>
+          <div class="xgg-quote-who">
+            <span class="xgg-quote-dot" style="background:#2b5f63;">何</span>
+            <div><b>何嘉树</b><em>摄影系学生 · 内容关注者</em></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 榜单 + 企业动态 ============ -->
+  <section class="xgg-section xgg-anchor" id="xgg-board" aria-labelledby="xggBoardTitle">
+    <div class="xgg-shell">
+      <div class="xgg-sec-head">
+        <div>
+          <div class="xgg-sec-kicker">RANKING / 榜单</div>
+          <h2 id="xggBoardTitle">榜单与动态：社区正在关注什么</h2>
+          <p class="xgg-sec-desc">数据每周更新，依据播放完成度、收藏率与评论质量综合计算，不唯播放量。</p>
+        </div>
+      </div>
+
+      <div class="xgg-index-grid">
+        <div class="xgg-board">
+          <h3>本期口碑榜 · 艺术影像</h3>
+          <p class="xgg-board-sub">统计周期 11月15日—11月21日 · 综合评分满分 10</p>
+          <div class="xgg-board-row">
+            <div class="xgg-board-rank">01</div>
+            <div><h4>百叶窗下的十四分钟</h4><p>创作幕后 · 林砚舟</p></div>
+            <div class="xgg-board-score">9.6</div>
+          </div>
+          <div class="xgg-board-row">
+            <div class="xgg-board-rank">02</div>
+            <div><h4>我不会让人看镜头</h4><p>人物访谈 · 白鹿野</p></div>
+            <div class="xgg-board-score">9.5</div>
+          </div>
+          <div class="xgg-board-row">
+            <div class="xgg-board-rank">03</div>
+            <div><h4>肤色不假白的五个步骤</h4><p>教程干货 · 周叙白</p></div>
+            <div class="xgg-board-score">9.4</div>
+          </div>
+          <div class="xgg-board-row">
+            <div class="xgg-board-rank">04</div>
+            <div><h4>回到暗房：黑白银盐放大</h4><p>艺术美学 · 苏合</p></div>
+            <div class="xgg-board-score">9.2</div>
+          </div>
+          <div class="xgg-board-row">
+            <div class="xgg-board-rank">05</div>
+            <div><h4>老城的四段自然光</h4><p>城市探索 · 陈也川</p></div>
+            <div class="xgg-board-score">9.0</div>
+          </div>
+          <div class="xgg-board-row">
+            <div class="xgg-board-rank">06</div>
+            <div><h4>渲染与实拍的缝合实验</h4><p>科技影像 · 何真一</p></div>
+            <div class="xgg-board-score">8.9</div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="xgg-list-title">企业动态 · 官方发布</h3>
+          <div class="xgg-news-list">
+            <article class="xgg-news">
+              <div class="xgg-news-top">
+                <h4>平台上线“拍摄清单”下载功能</h4>
+                <span class="xgg-news-date">11月20日</span>
+              </div>
+              <p>每个专题末尾新增 PDF 清单，包含布光图、时间表与器材建议，注册用户可免费下载。</p>
+            </article>
+            <article class="xgg-news">
+              <div class="xgg-news-top">
+                <h4>城市肖像计划第二季开放报名</h4>
+                <span class="xgg-news-date">11月18日</span>
+              </div>
+              <p>面向所有创作者征集，12 月 6 日截止。入选作品将在官网首页展映并获得创作者专访机会。</p>
+            </article>
+            <article class="xgg-news">
+              <div class="xgg-news-top">
+                <h4>与三家独立书店达成线下展映合作</h4>
+                <span class="xgg-news-date">11月12日</span>
+              </div>
+              <p>社区精选作品将以小型展映形式进入线下空间，首场定于 12 月中旬，详情见活动页。</p>
+            </article>
+            <article class="xgg-news">
+              <div class="xgg-news-top">
+                <h4>投稿规范更新：新增授权说明模板</h4>
+                <span class="xgg-news-date">11月06日</span>
+              </div>
+              <p>为保护被摄者权益，平台提供标准化的肖像授权模板，创作者可在投稿页直接获取。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ + 合作 + 投稿 ============ -->
+  <section class="xgg-section xgg-anchor" id="xgg-faq" aria-labelledby="xggFaqTitle">
+    <div class="xgg-shell">
+      <div class="xgg-sec-head">
+        <div>
+          <div class="xgg-sec-kicker">SUPPORT / 帮助</div>
+          <h2 id="xggFaqTitle">常见问题与合作方式</h2>
+          <p class="xgg-sec-desc">关于内容、投稿、课程与商业合作，这里整理了最常被问到的问题。</p>
+        </div>
+      </div>
+
+      <div class="xgg-aux-grid">
+        <div class="xgg-faq">
+          <details>
+            <summary>平台上的视频内容都是原创吗？</summary>
+            <p>是的。西西gogo顶级艺术摄影的所有视频均由签约作者或入驻创作者原创，并经过版权与授权核查后发布。平台标注“官方发布”的内容由编辑团队策划制作，转载需获得书面许可。</p>
+          </details>
+          <details>
+            <summary>如何申请成为平台的创作者？</summary>
+            <p>在投稿入口填写基础信息并提交 3-5 件代表作品即可。审核周期通常为 5-7 个工作日，重点看作品的完成度、原创性与叙事能力，不强制要求专业器材。</p>
+          </details>
+          <details>
+            <summary>工作坊与线上课程有什么区别？</summary>
+            <p>线上课程侧重方法论与可回看的操作演示，适合自主练习；工作坊是小规模线下实操，提供真实影棚、模特与灯光设备，并包含一对一的布光点评。两者内容互补，不重复。</p>
+          </details>
+          <details>
+            <summary>商业拍摄如何报价与排期？</summary>
+            <p>平台按项目复杂度提供三档方案，包含拍摄天数、后期张数与版权范围。提交需求后三个工作日内会给出初步方案，排期一般需提前三到四周。</p>
+          </details>
+          <details>
+            <summary>投稿时需要注意哪些授权问题？</summary>
+            <p>涉及可识别个人的影像需获得被摄者授权；涉及未成年人需监护人确认；涉及第三方场地或作品需说明来源。平台提供标准化授权模板，可在投稿页获取。</p>
+          </details>
+          <details>
+            <summary>作品被采用后会获得什么权益？</summary>
+            <p>入选作品将在官网与线下展映中获得展示位，并可能获得创作者专访、课程名额与项目合作推荐。平台不买断著作权，创作者保留署名权与作品处置权。</p>
+          </details>
+          <details>
+            <summary>可以使用平台内容做二次创作吗？</summary>
+            <p>非商业性的学习用途可在注明作者与来源的前提下引用片段；商业用途需提前申请授权。我们鼓励创作，但希望每一次使用都尊重原作者的劳动。</p>
+          </details>
+        </div>
+
+        <div>
+          <div class="xgg-partner-card">
+            <h3>合作品牌与伙伴</h3>
+            <p>我们与影像器材、独立出版与线下空间保持长期合作，共同推动艺术影像的公共可见度。</p>
+            <div class="xgg-partners">
+              <span class="xgg-partner">光屿相机租赁</span>
+              <span class="xgg-partner">白墨独立出版</span>
+              <span class="xgg-partner">南巷书店</span>
+              <span class="xgg-partner">拾光相纸</span>
+              <span class="xgg-partner">影棚 B 计划</span>
+              <span class="xgg-partner">城市艺文联合</span>
+            </div>
+          </div>
+
+          <div class="xgg-partner-card" id="xgg-submit" style="margin-top:18px;">
+            <h3>投稿与联系我们</h3>
+            <p>无论是完整作品、拍摄手记还是失败案例，我们都愿意看。请附上创作说明与授权材料。</p>
+            <div class="xgg-submit">
+              <p>合作与投稿邮箱：studio@xixigogo-art.example（仅作展示用途）</p>
+              <div class="xgg-hero-actions" style="margin-top:4px;">
+                <button class="xgg-btn xgg-btn-primary" type="button" data-xgg-open="submit">进入投稿入口</button>
+                <button class="xgg-btn xgg-btn-ghost" type="button" data-xgg-open="share">分享本页</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="xgg-footer">
+  <div class="xgg-shell">
+    <div class="xgg-footer-grid">
+      <div>
+        <div class="xgg-footer-logo">
+          <span class="xgg-logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="15" r="8" fill="none" stroke="#e8b96a" stroke-width="2"/>
+              <circle cx="16" cy="15" r="3" fill="#e8b96a"/>
+              <rect x="8" y="25" width="16" height="2.4" rx="1.2" fill="#e8b96a" opacity=".65"/>
+            </svg>
+          </span>
+          <b>西西gogo顶级艺术摄影</b>
+        </div>
+        <p>官方网站 · 艺术影像品牌与内容社区</p>
+        <p>以真实为底，以专业为尺，持续运营高品质的原创影像内容生态。</p>
+        <p class="xgg-foot-note">我们相信影像的力量来自真实，而不是完美。品牌深耕人像、时尚与观念影像垂直领域，服务创作者、品牌与每一位认真观看的人。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <nav class="xgg-footer-links" aria-label="内容导航">
+          <a href="#xgg-focus">精选影像</a>
+          <a href="#xgg-topics">专题企划</a>
+          <a href="#xgg-board">口碑榜单</a>
+          <a href="#xgg-essay">品牌解析</a>
+        </nav>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <nav class="xgg-footer-links" aria-label="社区导航">
+          <a href="#xgg-creators">创作者矩阵</a>
+          <a href="#xgg-voices">用户口碑</a>
+          <a href="#xgg-submit">投稿入口</a>
+          <a href="#xgg-faq">帮助中心</a>
+        </nav>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <p>企业主体：西西gogo艺术影像工作室</p>
+        <p>业务范围：艺术摄影、品牌影像、创作者课程</p>
+        <p>内容标准：原创正版 · 高清交付 · 授权可追溯</p>
+      </div>
+    </div>
+    <div class="xgg-foot-bottom">
+      <span>© 2026 西西gogo顶级艺术摄影 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容备案号：XG-ART-2026-1108 · 社区公约与投稿规范</span>
+    </div>
+  </div>
+</footer>
+
+<button class="xgg-totop" id="xggToTop" type="button" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 19V6M6 12l6-6 6 6"/></svg>
+</button>
+
+<div class="xgg-toast" id="xggToast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="xgg-modal" id="xggModalSubmit" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="xggSubmitTitle">
+  <div class="xgg-modal-box">
+    <div class="xgg-modal-head">
+      <h3 id="xggSubmitTitle">投稿入口</h3>
+      <button class="xgg-modal-close" type="button" data-xgg-close aria-label="关闭">×</button>
+    </div>
+    <p>请填写基本信息，我们会在 5-7 个工作日内通过邮件回复审核结果。</p>
+    <label class="xgg-field">创作者称呼
+      <input type="text" id="xggSubmitName" placeholder="例如：林砚舟" autocomplete="name">
+    </label>
+    <label class="xgg-field">作品方向
+      <select id="xggSubmitType">
+        <option>影棚人像</option>
+        <option>街拍肖像</option>
+        <option>观念影像</option>
+        <option>黑白暗房</option>
+        <option>创意合成</option>
+      </select>
+    </label>
+    <label class="xgg-field">创作说明
+      <textarea id="xggSubmitNote" rows="3" placeholder="简单说明拍摄背景、布光思路与被摄者授权情况"></textarea>
+    </label>
+    <button class="xgg-btn xgg-btn-primary" type="button" id="xggSubmitGo" style="width:100%;justify-content:center;">提交审核</button>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="xgg-modal" id="xggModalShare" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="xggShareTitle">
+  <div class="xgg-modal-box">
+    <div class="xgg-modal-head">
+      <h3 id="xggShareTitle">分享本页</h3>
+      <button class="xgg-modal-close" type="button" data-xgg-close aria-label="关闭">×</button>
+    </div>
+    <p>把这个页面分享给同样喜欢艺术影像的朋友。</p>
+    <div class="xgg-share-row">
+      <button type="button" data-xgg-copy="wechat">微信</button>
+      <button type="button" data-xgg-copy="weibo">微博</button>
+      <button type="button" data-xgg-copy="qq">QQ</button>
+      <button type="button" data-xgg-copy="link">复制链接</button>
+    </div>
+  </div>
+</div>
+
+<!-- 反馈弹窗 -->
+<div class="xgg-modal" id="xggModalFeedback" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="xggFeedbackTitle">
+  <div class="xgg-modal-box">
+    <div class="xgg-modal-head">
+      <h3 id="xggFeedbackTitle">反馈与举报</h3>
+      <button class="xgg-modal-close" type="button" data-xgg-close aria-label="关闭">×</button>
+    </div>
+    <p>如果你发现内容存在问题，或对页面体验有建议，请告诉我们。我们重视每一条反馈。</p>
+    <label class="xgg-field">反馈类型
+      <select id="xggFeedbackType">
+        <option>内容问题</option>
+        <option>版权与授权</option>
+        <option>页面体验</option>
+        <option>其他建议</option>
+      </select>
+    </label>
+    <label class="xgg-field">具体说明
+      <textarea id="xggFeedbackNote" rows="3" placeholder="请描述具体情况，便于我们核查"></textarea>
+    </label>
+    <button class="xgg-btn xgg-btn-primary" type="button" id="xggFeedbackGo" style="width:100%;justify-content:center;">提交反馈</button>
+  </div>
+</div>
+
+<!-- 作者档案弹窗 -->
+<div class="xgg-modal" id="xggModalAuthor" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="xggAuthorModalTitle">
+  <div class="xgg-modal-box">
+    <div class="xgg-modal-head">
+      <h3 id="xggAuthorModalTitle">创作者档案</h3>
+      <button class="xgg-modal-close" type="button" data-xgg-close aria-label="关闭">×</button>
+    </div>
+    <p><b id="xggAuthorName">创作者</b></p>
+    <p id="xggAuthorField" style="color:#7a5f2c;">擅长领域</p>
+    <p>该创作者已在西西gogo顶级艺术摄影发布多组原创内容，并参与平台的专题企划与课程制作。点击下方按钮可复制其主页链接，或通过投稿入口提交合作意向。</p>
+    <div class="xgg-share-row">
+      <button class="xgg-btn xgg-btn-primary" type="button" data-xgg-copy="link">复制主页链接</button>
+      <button class="xgg-btn xgg-btn-ghost" type="button" data-xgg-open="submit">发起合作</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById("xggToast");
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("is-on"); }, 2200);
+  }
+
+  /* ---------- 移动端导航折叠 ---------- */
+  var navToggle = document.getElementById("xggNavToggle");
+  var mainNav = document.getElementById("xggMainNav");
+  if(navToggle && mainNav){
+    navToggle.addEventListener("click", function(){
+      var open = mainNav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      navToggle.setAttribute("aria-label", open ? "收起导航" : "展开导航");
+    });
+    mainNav.addEventListener("click", function(e){
+      if(e.target.tagName === "A" && mainNav.classList.contains("is-open")){
+        mainNav.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded","false");
+        navToggle.setAttribute("aria-label","展开导航");
+      }
+    });
+  }
+
+  /* ---------- 搜索前端反馈 ---------- */
+  var searchInput = document.getElementById("xggSearchInput");
+  var searchFeedback = document.getElementById("xggSearchFeedback");
+  var searchForm = document.getElementById("xggSearchForm");
+  function runSearch(){
+    if(!searchInput || !searchFeedback) return;
+    var q = searchInput.value.trim();
+    if(!q){
+      searchFeedback.textContent = "请输入关键词，例如“布光”“黑白”“街拍”。";
+      searchFeedback.classList.add("is-on");
+      return;
+    }
+    var pool = [
+      "《百叶窗下的十四分钟》：影棚布光全记录",
+      "《我不会让人看镜头》：观念影像夜谈",
+      "《肤色不假白的五个步骤》：调色工作流",
+      "《回到暗房》：黑白银盐放大实操",
+      "《老城的四段自然光》：城市外拍时间表"
+    ];
+    var hit = pool.filter(function(x){ return x.indexOf(q) > -1; });
+    if(!hit.length){
+      hit = pool.filter(function(x){
+        var keys = ["布光","黑白","街拍","调色","城市","人像","访谈","暗房"];
+        return keys.some(function(k){ return q.indexOf(k) > -1 && x.indexOf(k) > -1; });
+      });
+    }
+    if(hit.length){
+      searchFeedback.textContent = "找到 " + hit.length + " 条相关内容：" + hit.join("；");
+    }else{
+      searchFeedback.textContent = "暂未匹配到“" + q + "”的条目，可试试布光、黑白、街拍或城市。";
+    }
+    searchFeedback.classList.add("is-on");
+  }
+  if(searchForm){
+    searchForm.addEventListener("submit", function(e){ e.preventDefault(); runSearch(); });
+  }
+  if(searchInput){
+    searchInput.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); runSearch(); }
+    });
+    searchInput.addEventListener("input", function(){
+      if(searchFeedback && searchFeedback.classList.contains("is-on") && searchInput.value.trim() === ""){
+        searchFeedback.classList.remove("is-on");
+      }
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  function parseNum(txt){
+    return parseInt((txt || "0").replace(/[^\d]/g,""), 10) || 0;
+  }
+  function fmt(n){
+    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+  document.addEventListener("click", function(e){
+    var likeBtn = e.target.closest("[data-xgg-like]");
+    if(likeBtn){
+      var numEl = likeBtn.querySelector(".xgg-like-num");
+      if(!numEl) return;
+      var n = parseNum(numEl.textContent);
+      var liked = likeBtn.classList.toggle("is-liked");
+      numEl.textContent = fmt(liked ? n + 1 : Math.max(0, n - 1));
+      toast(liked ? "已标记为有用" : "已取消标记");
+      return;
+    }
+    var saveBtn = e.target.closest("[data-xgg-save]");
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle("is-saved");
+      saveBtn.textContent = saved ? "已收藏" : "收藏";
+      toast(saved ? "已收藏，可在个人中心查看" : "已取消收藏");
+      return;
+    }
+  });
+
+  /* ---------- 复制链接 / 分享 ---------- */
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ toast("链接已复制"); }, function(){ fallback(); });
+    }else{
+      fallback();
+    }
+    function fallback(){
+      try{
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        toast("链接已复制");
+      }catch(err){
+        toast("复制未成功，请手动选择分享");
+      }
+    }
+  }
+  document.addEventListener("click", function(e){
+    var copyBtn = e.target.closest("[data-xgg-copy]");
+    if(!copyBtn) return;
+    var kind = copyBtn.getAttribute("data-xgg-copy");
+    var text = window.location.href;
+    if(kind === "wechat"){ toast("请打开微信，粘贴链接分享给好友"); return; }
+    if(kind === "weibo"){ toast("已准备微博分享，请粘贴至发布框"); copyText(text); return; }
+    if(kind === "qq"){ toast("请打开 QQ，粘贴链接发送给好友"); return; }
+    copyText(text);
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  var modalMap = {
+    submit: document.getElementById("xggModalSubmit"),
+    share: document.getElementById("xggModalShare"),
+    feedback: document.getElementById("xggModalFeedback"),
+    author: document.getElementById("xggModalAuthor")
+  };
+  var lastFocus = null;
+  function openModal(key){
+    var m = modalMap[key];
+    if(!m) return;
+    lastFocus = document.activeElement;
+    m.classList.add("is-on");
+    m.setAttribute("aria-hidden","false");
+    document.body.style.overflow = "hidden";
+    var first = m.querySelector("input, select, textarea, button");
+    if(first) first.focus();
+  }
+  function closeModals(){
+    Object.keys(modalMap).forEach(function(k){
+      var m = modalMap[k];
+      if(m){ m.classList.remove("is-on"); m.setAttribute("aria-hidden","true"); }
+    });
+    document.body.style.overflow = "";
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.addEventListener("click", function(e){
+    var opener = e.target.closest("[data-xgg-open]");
+    if(opener){
+      e.preventDefault();
+      var key = opener.getAttribute("data-xgg-open");
+      if(key === "author"){
+        var nameEl = document.getElementById("xggAuthorName");
+        var fieldEl = document.getElementById("xggAuthorField");
+        var titleEl = document.getElementById("xggAuthorModalTitle");
+        var nm = opener.getAttribute("data-xgg-name") || "创作者";
+        var fd = opener.getAttribute("data-xgg-field") || "艺术影像";
+        if(nameEl) nameEl.textContent = nm;
+        if(fieldEl) fieldEl.textContent = fd;
+        if(titleEl) titleEl.textContent = nm + " · 创作者档案";
+      }
+      openModal(key);
+      return;
+    }
+    if(e.target.closest("[data-xgg-close]")){ closeModals(); return; }
+    if(e.target.classList && e.target.classList.contains("xgg-modal")){ closeModals(); }
+  });
+
+  /* ---------- 投稿 / 反馈提交 ---------- */
+  var submitGo = document.getElementById("xggSubmitGo");
+  if(submitGo){
+    submitGo.addEventListener("click", function(){
+      var name = (document.getElementById("xggSubmitName") || {}).value || "";
+      if(!name.trim()){ toast("请先填写创作者称呼"); return; }
+      closeModals();
+      toast("投稿已提交，我们会在 5-7 个工作日内回复");
+    });
+  }
+  var feedbackGo = document.getElementById("xggFeedbackGo");
+  if(feedbackGo){
+    feedbackGo.addEventListener("click", function(){
+      var note = (document.getElementById("xggFeedbackNote") || {}).value || "";
+      if(!note.trim()){ toast("请简单描述一下具体情况"); return; }
+      closeModals();
+      document.getElementById("xggFeedbackNote").value = "";
+      toast("反馈已收到，感谢你的认真");
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = document.getElementById("xggToTop");
+  function onScroll(){
+    if(!toTop) return;
+    if(window.scrollY > 640){ toTop.classList.add("is-on"); }
+    else{ toTop.classList.remove("is-on"); }
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+  if(toTop){
+    toTop.addEventListener("click", function(){
+      window.scrollTo({top:0, behavior:"smooth"});
+    });
+  }
+
+  /* ---------- Esc 关闭弹窗 ---------- */
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape"){ closeModals(); }
+  });
+})();
+</script>
+
+</body>
+                </html>
